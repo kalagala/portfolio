@@ -4,21 +4,35 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="theme-color" content="#30313a" />
         <title>Kalagala</title>
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="logo.css" />
-        <link rel="shortcut icon" href="logo.png" type="image/png" />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="shortcut icon" href="./logo.svg" />
+        <script src="./script.js"></script>
     </head>
-    <body>
+    <body onresize="checkMenu()">
         <div class="background"></div>
-        <div class="content">
-            <ul>
+        <div class="content" onclick="hide_menu()">
+            <ul class="desktop">
                 <li class="left">
                     <a href="#"><img src="./logo.svg" alt=""/></a>
                 </li>
                 <li class="right"><a href="#">Bio</a></li>
                 <li class="right"><a href="#">Portfolio</a></li>
                 <li class="right"><a href="#">Tools</a></li>
+                <li
+                    class="menu"
+                    id="menu"
+                    onclick="event.stopPropagation(); show_menu()"
+                >
+                    <i></i>
+                </li>
+            </ul>
+            <ul class="mobile" id="mobile">
+                <li class="close" onclick="hide_menu()"><i></i></li>
+                <li class="mobile_nav"><a href="#">Bio</a></li>
+                <li class="mobile_nav"><a href="#">Portfolio</a></li>
+                <li class="mobile_nav"><a href="#">Tools</a></li>
             </ul>
         </div>
     </body>

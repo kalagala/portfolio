@@ -13,21 +13,29 @@ body {
     right: 0;
     height: 100vh;
 }
-
+a {
+    color: white;
+}
 .content {
     position: absolute;
-    background-color: rgba(48, 49, 58, 0.9);
+    background-color: rgba(48, 49, 58, 0.904);
     width: 100%;
     height: 100vh;
 }
 
-ul {
+.desktop {
     margin: 0;
     padding: 0;
     list-style-type: none;
     overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
-
+.mobile {
+    display: none;
+}
 a img {
     width: 32px;
     height: 32px;
@@ -42,6 +50,8 @@ li {
 }
 .left {
     float: left;
+    padding-top: 5px;
+    padding-left: 5px;
 }
 
 a {
@@ -51,6 +61,73 @@ a {
     padding: 10px;
     color: white;
 }
+
+.right a:hover {
+    color: #1affa3;
+}
 li a {
     display: block;
+}
+.menu {
+    display: none;
+    float: right;
+}
+
+i {
+    cursor: pointer;
+}
+@media screen and (max-width: 430px) {
+    .right {
+        display: none;
+    }
+    .menu {
+        display: inline-block;
+        padding-top: 8px;
+        padding-right: 8px;
+    }
+    .menu i {
+        width: 32px;
+        height: 32px;
+        background: url(./menu.svg);
+        background-size: 32px 32px;
+        display: block;
+    }
+    .mobile {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 40%;
+        height: 100vh;
+        background-color: rgba(34, 34, 41, 0.9);
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        color: white;
+    }
+    .close i {
+        width: 25px;
+        height: 25px;
+        background: url(./close.svg);
+        background-size: 25px 25px;
+        display: block;
+        margin-bottom: 8px;
+    }
+    .close {
+        padding-top: 12px;
+        padding-left: 8px;
+        width: 30px;
+    }
+    .mobile_nav {
+        display: block;
+        margin-top: 2px;
+        background-color: rgb(54, 54, 65);
+    }
+    .mobile_nav a {
+        display: block;
+        padding: 8px;
+    }
+    .mobile_nav a:hover {
+        color: #1affa3;
+    }
 }
