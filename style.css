@@ -3,6 +3,7 @@ body {
     padding: 0;
     color: white;
 }
+
 .background {
     background-image: url("./bg.png");
     background-size: cover;
@@ -28,7 +29,7 @@ a {
     padding: 0;
     list-style-type: none;
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
