@@ -7,12 +7,13 @@
         <meta name="theme-color" content="#30313a" />
         <title>Kalagala</title>
         <link rel="stylesheet" href="./style.css" />
-        <link rel="shortcut icon" href="./logo.svg" />
+        <link rel="shortcut icon" href="./favicon.png" />
         <script src="./script.js"></script>
     </head>
     <body onresize="checkMenu()">
         <div class="background"></div>
-        <div class="header_background" onclick="hide_menu()">
+        <div class="header_background" onclick="hide_menu()"></div>
+        <div class="nav">
             <ul class="desktop">
                 <li class="left">
                     <a href="#"><img src="./logo.svg" alt=""/></a>
@@ -35,7 +36,7 @@
                 <li class="mobile_nav"><a href="#">Tools</a></li>
             </ul>
         </div>
-        <div class="intro">
+        <div class="intro" onclick="hide_menu()">
             <div class="image">
                 <img src="./me.jpg" alt="super cool pic of kalagala" />
             </div>

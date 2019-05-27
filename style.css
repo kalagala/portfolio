@@ -33,9 +33,11 @@ a {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 7;
 }
 .mobile {
     display: none;
+    z-index: 7;
 }
 a img {
     width: 32px;
@@ -63,7 +65,7 @@ a {
     color: white;
 }
 
-.right a:hover {
+a:hover {
     color: #1affa3;
 }
 li a {
