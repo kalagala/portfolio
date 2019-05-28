@@ -10,7 +10,7 @@
         <link rel="shortcut icon" href="./favicon.png" />
         <script src="./script.js"></script>
     </head>
-    <body onresize="checkMenu()">
+    <body onresize="checkMenu()" onscroll="makeNavBarDarker(event)">
         <div class="background"></div>
         <div class="header_background" onclick="hide_menu()"></div>
         <div class="nav">
@@ -45,5 +45,8 @@
                 <h1>Kalagala Kapunda</h1>
             </div>
         </div>
+        <div class="bio"></div>
+        <div class="portfolio"></div>
+        <div class="tools"></div>
     </body>
 </html>

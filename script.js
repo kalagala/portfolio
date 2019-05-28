@@ -19,3 +19,12 @@ function checkMenu() {
         document.getElementById("mobile").style.display = "none";
     }
 }
+
+function makeNavBarDarker(e) {
+    if (window.scrollY < 95) {
+        //navbar should be clear
+    } else if (window.scrollY == 95) {
+        //make it dark
+    }
+    console.log(window.scrollY);
+}
