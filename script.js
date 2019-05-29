@@ -55,3 +55,12 @@ function makeToolsActive() {
     bio.classList.remove("active");
     portfolio.classList.remove("active");
 }
+
+function makeThemAllInvisible() {
+    var tools = document.getElementById("tool_link");
+    var portfolio = document.getElementById("port_link");
+    var bio = document.getElementById("bio_link");
+    portfolio.classList.remove("active");
+    tools.classList.remove("active");
+    bio.classList.remove("active");
+}

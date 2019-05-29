@@ -129,9 +129,7 @@ i {
         overflow-y: scroll;
         scroll-padding-top: 48px;
     }
-    .intro {
-        border: 2px solid red;
-    }
+
     .right {
         display: none;
     }
