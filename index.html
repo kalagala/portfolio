@@ -18,9 +18,19 @@
                 <li class="left">
                     <a href="#"><img src="./logo.svg" alt=""/></a>
                 </li>
-                <li class="right"><a href="#">Bio</a></li>
-                <li class="right"><a href="#">Portfolio</a></li>
-                <li class="right"><a href="#">Tools</a></li>
+                <li class="right" id="tool_link" onclick="makeToolsActive()">
+                    <a href="#">Tools</a>
+                </li>
+                <li
+                    class="right"
+                    id="port_link"
+                    onclick="makePortfolioActive()"
+                >
+                    <a href="#">Portfolio</a>
+                </li>
+                <li class="right" id="bio_link" onclick="makeBioActive()">
+                    <a href="#bio">Bio</a>
+                </li>
                 <li
                     class="menu"
                     id="menu"
@@ -31,12 +41,12 @@
             </ul>
             <ul class="mobile" id="mobile">
                 <li class="close" onclick="hide_menu()"><i></i></li>
-                <li class="mobile_nav"><a href="#">Bio</a></li>
+                <li class="mobile_nav"><a href="#bio">Bio</a></li>
                 <li class="mobile_nav"><a href="#">Portfolio</a></li>
                 <li class="mobile_nav"><a href="#">Tools</a></li>
             </ul>
         </div>
-        <div class="intro" onclick="hide_menu()">
+        <div class="intro" id="home" onclick="hide_menu()">
             <div class="image">
                 <img src="./me.jpg" alt="super cool pic of kalagala" />
             </div>
@@ -45,8 +55,21 @@
                 <h1>Kalagala Kapunda</h1>
             </div>
         </div>
-        <div class="bio"></div>
-        <div class="portfolio"></div>
-        <div class="tools"></div>
+        <div class="bio" id="bio" onclick="hide_menu()">
+            <h5>a little bit about me</h5>
+            <p>
+                I am a young energetic tanzanian man in his early 20s who enjoys
+                technology as well as the next guy.
+            </p>
+            <p>
+                I got exposed into programming in the late 2016 and fell in love
+                with it so i started learning focusing on web development and
+                now i have created alot of web apps while learning, some of
+                these apps will be showcased on the <a>portfolio</a> section
+            </p>
+            <p>I am also a huge fan of marvel movies</p>
+        </div>
+        <div class="portfolio" onclick="hide_menu()"></div>
+        <div class="tools" onclick="hide_menu()" z></div>
     </body>
 </html>

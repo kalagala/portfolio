@@ -28,3 +28,30 @@ function makeNavBarDarker(e) {
     }
     console.log(window.scrollY);
 }
+
+function makeBioActive(bio) {
+    var bio = document.getElementById("bio_link");
+    bio.classList.add("active");
+    var portfolio = document.getElementById("port_link");
+    var tools = document.getElementById("tool_link");
+    portfolio.classList.remove("active");
+    tools.classList.remove("active");
+}
+
+function makePortfolioActive() {
+    var portfolio = document.getElementById("port_link");
+    portfolio.classList.add("active");
+    var bio = document.getElementById("bio_link");
+    var tools = document.getElementById("tool_link");
+    bio.classList.remove("active");
+    tools.classList.remove("active");
+}
+
+function makeToolsActive() {
+    var tools = document.getElementById("tool_link");
+    tools.classList.add("active");
+    var bio = document.getElementById("bio_link");
+    var portfolio = document.getElementById("port_link");
+    bio.classList.remove("active");
+    portfolio.classList.remove("active");
+}

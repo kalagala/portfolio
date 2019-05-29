@@ -2,9 +2,6 @@ body {
     margin: 0;
     padding: 0;
     color: white;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    scroll-padding-top: 48px;
 }
 
 .background {
@@ -84,7 +81,7 @@ i {
     cursor: pointer;
 }
 .intro {
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
     left: 0;
@@ -94,7 +91,7 @@ i {
 .desktop {
     background-color: rgba(48, 49, 58, 0.904);
     padding-bottom: 5px;
-    z-index: 9;
+    z-index: 2;
 }
 .image {
     width: 130px;
@@ -127,8 +124,13 @@ i {
     }
 }
 @media screen and (max-width: 430px) {
-    .bio {
-        margin-top: 180%;
+    body {
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        scroll-padding-top: 48px;
+    }
+    .intro {
+        border: 2px solid red;
     }
     .right {
         display: none;
@@ -157,6 +159,7 @@ i {
         padding: 0;
         list-style-type: none;
         color: white;
+        z-index: 5;
     }
     .close i {
         width: 25px;
@@ -183,4 +186,7 @@ i {
     .mobile_nav a:hover {
         color: #1affa3;
     }
+}
+.active a {
+    color: #1affa3;
 }
