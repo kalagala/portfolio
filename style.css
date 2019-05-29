@@ -127,9 +127,10 @@ i {
     body {
         scroll-snap-type: y mandatory;
         overflow-y: scroll;
+    }
+    .bio {
         scroll-padding-top: 48px;
     }
-
     .right {
         display: none;
     }
