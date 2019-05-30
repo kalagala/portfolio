@@ -2,11 +2,18 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+        />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta name="theme-color" content="#30313a" />
         <title>Kalagala</title>
         <link rel="stylesheet" href="./style.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
         <link rel="shortcut icon" href="./favicon.png" />
         <script src="./script.js"></script>
     </head>
@@ -16,17 +23,17 @@
         <div class="nav">
             <ul class="desktop">
                 <li class="left" onclick="makeThemAllInvisible()">
-                    <a href="#"><img src="./logo.svg" alt=""/></a>
+                    <a href="#home"><img src="./logo.svg" alt=""/></a>
                 </li>
                 <li class="right" id="tool_link" onclick="makeToolsActive()">
-                    <a href="#">Tools</a>
+                    <a href="#tools">Tools</a>
                 </li>
                 <li
                     class="right"
                     id="port_link"
                     onclick="makePortfolioActive()"
                 >
-                    <a href="#">Portfolio</a>
+                    <a href="#portfolio">Portfolio</a>
                 </li>
                 <li class="right" id="bio_link" onclick="makeBioActive()">
                     <a href="#bio">Bio</a>
@@ -42,8 +49,8 @@
             <ul class="mobile" id="mobile">
                 <li class="close" onclick="hide_menu()"><i></i></li>
                 <li class="mobile_nav"><a href="#bio">Bio</a></li>
-                <li class="mobile_nav"><a href="#">Portfolio</a></li>
-                <li class="mobile_nav"><a href="#">Tools</a></li>
+                <li class="mobile_nav"><a href="#portfolio">Portfolio</a></li>
+                <li class="mobile_nav"><a href="#tools">Tools</a></li>
             </ul>
         </div>
         <div class="intro" id="home" onclick="hide_menu()">
@@ -53,23 +60,209 @@
             <div class="title">
                 <h4>hello, i am</h4>
                 <h1>Kalagala Kapunda</h1>
+                <h3>a Web Developer</h3>
             </div>
         </div>
         <div class="bio" id="bio" onclick="hide_menu()">
-            <h2>a little bit about me</h2>
+            <h2>A little bit about me</h2>
             <p>
-                I am a young energetic tanzanian man in his early 20s who enjoys
-                technology as well as the next guy.
+                I am a young energetic tanzanian in my early 20s who enjoys
+                technology alot.<br />
+                <br />
+                Since i was a young boy i've been taking apart various machines
+                from radios to car engines and building them back together.
             </p>
             <p>
-                I got exposed into programming in the late 2016 and fell in love
-                with it so i started learning focusing on web development and
-                now i have created alot of web apps while learning, some of
-                these apps will be showcased on the <a>portfolio</a> section
+                I got exposed into programming and fell in love with it so i
+                started learning focusing on web development and now i have
+                created alot of web apps while learning, some of these apps will
+                be showcased on the
+                <a href="#portfolio" onclick="makePortfolioActive()"
+                    >portfolio</a
+                >
+                section
             </p>
-            <p>I am also a huge fan of marvel movies</p>
+            <p>
+                I am also a huge fan of marvel movies who has the watched the
+                entire mcu atleast four times
+            </p>
+            <p>
+                A part from the technology word i am also a proffessional volley
+                ball player since 2013 and i've had the priveledge to be part of
+                my school team ever since
+            </p>
         </div>
-        <div class="portfolio" onclick="hide_menu()"></div>
-        <div class="tools" onclick="hide_menu()" z></div>
+        <div class="portfolio" id="portfolio" onclick="hide_menu()">
+            <h2>Here are some software projects i've done over the years</h2>
+            <div class="projects">
+                <div class="project" id="file_transfer">
+                    <h4>File Transfer App</h4>
+                    <img
+                        src="./images/file_transfer.png"
+                        alt="Screen Shoot of the app transfering some files"
+                    />
+                    <p>
+                        This web app allows tranfering of from any device with a
+                        web browser to another in the same network, it is
+                        written in php and javascript. it also provide various
+                        info such as speed
+                    </p>
+                    <a
+                        href="https://github.com/kalagala/fileTransfer"
+                        target="blank"
+                        ><i></i
+                    ></a>
+                </div>
+                <div class="project" id="kalamovies">
+                    <h4>Movies and Tv Series Library</h4>
+                    <img
+                        src="./images/kalamovies.png"
+                        alt="a screenshot of the movie Library showing a movie arrival"
+                    />
+                    <p>
+                        This is a web app which information about various movies
+                        and television shows including the cast, plot,
+                        directors, running time, release date and alot more
+                        information
+                    </p>
+                    <a
+                        href="https://github.com/kalagala/kalamovies"
+                        target="blank"
+                        ><i></i
+                    ></a>
+                </div>
+                <div class="project" id="youtube_clone">
+                    <h4>A Youtube Clone</h4>
+                    <img
+                        src="./images/youtube_clone.png"
+                        alt="a screenshot my youtube clone playing a zayn song"
+                    />
+                    <p>
+                        This is as the name says a youtube clone made with react
+                        and it is powered by the official youtube public api,
+                        the app can only search videos and play them
+                    </p>
+                    <a
+                        href="https://github.com/kalagala/react_intro/tree/youtube"
+                        target="blank"
+                        ><i></i
+                    ></a>
+                </div>
+                <div class="project" id="mwademo">
+                    <h4>Mwademo Website</h4>
+                    <img
+                        src="./images/mwademo.png"
+                        alt="a screenshot of mwademo website"
+                    />
+                    <p>
+                        Mwademo (Mwambao Development Movement) is a non
+                        governmental organization dealing with development
+                        issues in the coastal areas of lake tanganyika, I made
+                        them a website where they can show case how they empower
+                        various people of the coastal area
+                    </p>
+                    <a href="https://mwademo.org" target="blank"><i></i></a>
+                </div>
+                <div class="project" id="unsplash">
+                    <h4>Unsplash Clone</h4>
+                    <img
+                        src="./images/unsplash.png"
+                        alt="a screenshot of mwademo website"
+                    />
+                    <p>
+                        This is another cloni-ish web app only this is cloning
+                        unsplash, it is also powered by the official unsplash
+                        api and the clone is made with react
+                    </p>
+                    <a
+                        href="https://github.com/kalagala/react_intro/tree/pics"
+                        target="blank"
+                        ><i></i
+                    ></a>
+                </div>
+                <div class="project" id="season">
+                    <h4>Winter Detector</h4>
+                    <img
+                        src="./images/season.png"
+                        alt="a screenshot of mwademo website"
+                    />
+                    <p>
+                        This is a super simple web app i made which will tell
+                        you if it is winter or summer based on your location and
+                        month of the year
+                    </p>
+                    <a
+                        href="https://github.com/kalagala/react_intro/tree/seasons"
+                        target="blank"
+                        ><i></i
+                    ></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tools" id="tools" onclick="hide_menu()">
+            <h2>Here are the tools i use most in my works</h2>
+            <div class="toolsIUse">
+                <div class="tool">
+                    <a href="https://code.visualstudio.com/" target="blank">
+                        <img
+                            <img
+                            class="tool_pic"
+                            src="./images/vscode.png"
+                            alt="vscode logo"
+                        />
+                    </a>
+                    <h5>Visual Studio Code</h5>
+                    <p>
+                        This is my main text editor i've used it in most of the
+                        projects i've done, its just awosome
+                    </p>
+                </div>
+                <div class="tool">
+                    <a href="https://git-scm.com/" target="blank">
+                        <img
+                            <img
+                            class="tool_pic"
+                            src="./images/git.png"
+                            alt="git logo"
+                        />
+                    </a>
+                    <h5>Git</h5>
+                    <p>
+                        This helps me alot in tracking changes i've made to my
+                        code
+                    </p>
+                </div>
+                <div class="tool">
+                    <a href="" target="blank">
+                        <img
+                            class="tool_pic"
+                            src="./images/asus.jpeg"
+                            alt="asus logo"
+                        />
+                    </a>
+                    <h5>A laptop</h5>
+                    <p>
+                        I've been using an asus X441na which is like the slowest
+                        computer in the world but it has gotten me this far
+                    </p>
+                </div>
+                <div class="tool">
+                    <img
+                        <img
+                        class="tool_pic"
+                        src="./images/ubuntu.png"
+                        alt="ubuntu logo"
+                    />
+
+                    <h5>An Operationg System</h5>
+                    <p>
+                        Since my pc could not handle windows hunger for some
+                        resorces i switched to Ubuntu and ever since i'm in love
+                        with it
+                    </p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
