@@ -17,7 +17,7 @@
         <link rel="shortcut icon" href="./icons/favicon.png" />
         <script src="./script.js"></script>
     </head>
-    <body onresize="checkMenu()" onscroll="makeNavBarDarker(event)">
+    <body onresize="checkMenu()"  onload="makeItSnapy()" id="body">
         <div class="background"></div>
         <div class="header_background" onclick="hide_menu()"></div>
         <div class="nav">
@@ -94,7 +94,7 @@
         </div>
         <div class="portfolio" id="portfolio" onclick="hide_menu()">
             <h2>Here are some software projects i've done over the years</h2>
-            <div class="projects">
+            <div class="projects" id="projects">
                 <div class="project" id="file_transfer">
                     <h4>File Transfer App</h4>
                     <img
@@ -202,11 +202,11 @@
 
         <div class="tools" id="tools" onclick="hide_menu()">
             <h2>Here are the tools i use most in my works</h2>
-            <div class="toolsIUse">
+            <div class="toolsIUse" id="toolsIUse">
                 <div class="tool">
                     <a href="https://code.visualstudio.com/" target="blank">
                         <img
-                            <img
+                            
                             class="tool_pic"
                             src="./images/vscode.png"
                             alt="vscode logo"
