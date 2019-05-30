@@ -5,7 +5,6 @@ body {
     font-family: "Montserrat";
     width: auto;
     background-color: rgb(34, 37, 61);
-    scroll-snap-type: y mandatory;
     overflow-y: scroll;
 }
 
@@ -44,6 +43,13 @@ a {
     top: 0;
     left: 0;
     right: 0;
+}
+
+.snappyY{    
+    scroll-snap-type: y mandatory;
+}
+.snappyX{
+    scroll-snap-type: x mandatory;
 }
 .mobile {
     display: none;
@@ -241,15 +247,11 @@ i {
     .arrow {
         margin-bottom: 70px;
     }
-    .projects {
-        scroll-snap-type: x mandatory;
-    }
+    
     .project {
         scroll-snap-align: center;
     }
-    .toolsIUse {
-        scroll-snap-type: x mandatory;
-    }
+    
     .tool {
         scroll-snap-align: center;
     }

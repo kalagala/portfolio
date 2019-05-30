@@ -20,14 +20,7 @@ function checkMenu() {
     }
 }
 
-function makeNavBarDarker(e) {
-    if (window.scrollY < 95) {
-        //navbar should be clear
-    } else if (window.scrollY == 95) {
-        //make it dark
-    }
-    console.log(window.scrollY);
-}
+
 
 function makeBioActive(bio) {
     var bio = document.getElementById("bio_link");
@@ -63,4 +56,13 @@ function makeThemAllInvisible() {
     portfolio.classList.remove("active");
     tools.classList.remove("active");
     bio.classList.remove("active");
+}
+
+function makeItSnapy(){
+    var body = document.getElementById('body');
+    body.classList.add("snappyY");
+    var project = document.getElementById("projects");
+    project.classList.add("snappyX");
+    var toolsIUSE = document.getElementById('toolsIUse');
+    toolsIUSE.classList.add("snappyX");
 }
