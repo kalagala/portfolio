@@ -10,7 +10,7 @@ body {
 }
 
 .background {
-    background-image: url("./bg.png");
+    background-image: url("./images/bg.png");
     background-size: cover;
     filter: blur(5px);
     position: fixed;
@@ -267,7 +267,7 @@ i {
     .menu i {
         width: 32px;
         height: 32px;
-        background: url(./menu.svg);
+        background: url(./icons/menu.svg);
         background-size: 32px 32px;
         display: block;
     }
@@ -288,7 +288,7 @@ i {
     .close i {
         width: 25px;
         height: 25px;
-        background: url(./close.svg);
+        background: url(./icons/close.svg);
         background-size: 25px 25px;
         display: block;
         margin-bottom: 8px;
